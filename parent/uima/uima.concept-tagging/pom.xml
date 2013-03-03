@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.apache.clerezza</groupId>
+  <artifactId>uima.concept-tagging</artifactId>
+  <version>0.1-incubating-SNAPSHOT</version>
+  <packaging>bundle</packaging>
+  <name>Apache Clerezza UIMA extension for concept tagging</name>
+  <description>Apache Clerezza UIMA extension for concept (SKOS) tagging</description>
+  <parent>
+    <groupId>org.apache.clerezza</groupId>
+    <artifactId>uima</artifactId>
+    <version>0.1-incubating-SNAPSHOT</version>
+  </parent>
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.clerezza</groupId>
+      <artifactId>platform.concepts.core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.clerezza</groupId>
+      <artifactId>uima.utils</artifactId>
+      <version>0.1-incubating-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.clerezza</groupId>
+      <artifactId>uima.casconsumer</artifactId>
+      <version>0.1-incubating-SNAPSHOT</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.uima</groupId>
+      <artifactId>uimaj-ep-runtime</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.uima</groupId>
+      <artifactId>alchemy-annotator-osgi</artifactId>
+      <version>2.3.1-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.uima</groupId>
+      <artifactId>OpenCalaisAnnotator-osgi</artifactId>
+      <version>2.3.1-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
+</project>
